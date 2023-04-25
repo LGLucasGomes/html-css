@@ -1,0 +1,43 @@
+@charset "UTF-8"; 
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    background-color: whitesmoke;
+}
+h1{
+   color: rgba(18, 18, 109, 0.541);
+  
+}
+h1#principal{
+    text-align: center;
+    background-color: whitesmoke;
+}
+h2{
+color: rgb(194, 63, 15);
+}
+
+.basico{
+    background-color: rgba(127, 255, 212, 0.575);
+    color: rgba(18, 18, 109, 0.541);
+}
+.intermediario{
+    background-color: aquamarine;
+    color: rgba(18, 18, 109, 0.541);
+}
+.avançado{
+    background-color: aquamarine;
+    color: rgba(18, 18, 109, 0.541);
+}
+.destaque{
+    background-color:rgba(5, 169, 219, 0.493);
+    text-align: start;
+    color:  rgba(18, 18, 109, 0.541);
+
+}
+.texto{
+    text-indent: 20px;
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+
+}
