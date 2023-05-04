@@ -9,34 +9,53 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        caption{
+            background-color: lightgrey;
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 5px;
+        }
         table{
-            width: 350px;
+            width: 500px;
             height: 150px;
-            border: 1px solid black;
+            padding: 10px;
+            border: 2px solid black;
             border-collapse: collapse;
+            position: relative;
         }
-        thead{
+        thead, tfoot{
             background-color: gray;
+            border: 2px solid black;
+            
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+        th,td{
             border: 1px solid black;
         }
-        td, tr {
-            border: 1px solid black;
+        tbody > tr:nth-child(even) {
+            background-color: lightslategray;
         }
         .num{
             text-align: right;
         }
-        tfoot{
-            background-color: gray;
+        .num{
+            background-color:lightgray;
         }
-    </style>
+</style>
 </head>
 <body>
     <h1>Tabela Big</h1>
     <table>
+        <caption>Tabela de compras e preços</caption>
         <thead>
             <tr>
                 <th scope="col">Lista de Compras</th>
-                <th scope="col">Valor</th>
+                <th scope="col" style="width: 100px;">Valor</th>
             </tr>
         </thead>
         <tbody>
@@ -44,33 +63,65 @@
                 <td>Feijão 1kg</td>
                 <td class="num">5,00</td>
             </tr>
-        </tbody>
-        <tbody>
             <tr>
                 <td>arroz 5kg</td>
                 <td class="num">25,00</td>
             </tr>
-        </tbody>
-        <tbody>
             <tr>
                 <td> macarrão</td>
                 <td class="num">8,00</td>
             </tr>
-        </tbody>
-        <tbody>
             <tr>
                 <td>Ovo</td>
                 <td class="num">23,00</td>
+            </tr>
+            <tr>
+                <td>Açucar</td>
+                <td class="num">5,00</td>
+            </tr>
+            <tr>
+                <td>Café</td>
+                <td class="num">18,00</td>
+            </tr>
+            <tr>
+                <td>Leite</td>
+                <td class="num">6,00</td>
+            </tr>
+            <tr>
+                <td>Caixa de Cereal</td>
+                <td class="num">25,00</td>
+            </tr>
+            <tr>
+                <td>alho</td>
+                <td class="num">17,00</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Valor Total :</th>
-                <td class="num">61,00</td>
+                <td class="num"><strong>132,00</strong></td>
             </tr>
         </tfoot>
     </table>
     <p><strong>Lista basica só pra aprender cmo funciona :) </strong></p>
+   <h1>TITULO ALEATORIO</h1>
+   <h2>SUB TITULO</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quo dolore tenetur, placeat ad sit tempore mollitia, animi, excepturi quaerat necessitatibus. Consequuntur harum voluptas dolor quaerat! Totam recusandae corrupti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum veniam dignissimos ut assumenda id provident minus mollitia quam, deleniti dolor pariatur eum quaerat quidem. Illo quia vero saepe perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque velit, sed, quas dolorum nesciunt magni ducimus possimus voluptas voluptate dolore, ipsum facilis aut dolorem suscipit sit. Harum, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptatem minus aliquid. Ipsum eius dolor asperiores deserunt expedita? Animi fuga voluptates earum reprehenderit corporis in, ratione numquam obcaecati quas magnam.</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quo dolore tenetur, placeat ad sit tempore mollitia, animi, excepturi quaerat necessitatibus. Consequuntur harum voluptas dolor quaerat! Totam recusandae corrupti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum veniam dignissimos ut assumenda id provident minus mollitia quam, deleniti dolor pariatur eum quaerat quidem. Illo quia vero saepe perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque velit, sed, quas dolorum nesciunt magni ducimus possimus voluptas voluptate dolore, ipsum facilis aut dolorem suscipit sit. Harum, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptatem minus aliquid. Ipsum eius dolor asperiores deserunt expedita? Animi fuga voluptates earum reprehenderit corporis in, ratione numquam obcaecati quas magnam.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quo dolore tenetur, placeat ad sit tempore mollitia, animi, excepturi quaerat necessitatibus. Consequuntur harum voluptas dolor quaerat! Totam recusandae corrupti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum veniam dignissimos ut assumenda id provident minus mollitia quam, deleniti dolor pariatur eum quaerat quidem. Illo quia vero saepe perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque velit, sed, quas dolorum nesciunt magni ducimus possimus voluptas voluptate dolore, ipsum facilis aut dolorem suscipit sit. Harum, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptatem minus aliquid. Ipsum eius dolor asperiores deserunt expedita? Animi fuga voluptates earum reprehenderit corporis in, ratione numquam obcaecati quas magnam.</p>
+    <h2> CONTEUDO </h2>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quo dolore tenetur, placeat ad sit tempore mollitia, animi, excepturi quaerat necessitatibus. Consequuntur harum voluptas dolor quaerat! Totam recusandae corrupti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum veniam dignissimos ut assumenda id provident minus mollitia quam, deleniti dolor pariatur eum quaerat quidem. Illo quia vero saepe perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque velit, sed, quas dolorum nesciunt magni ducimus possimus voluptas voluptate dolore, ipsum facilis aut dolorem suscipit sit. Harum, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptatem minus aliquid. Ipsum eius dolor asperiores deserunt expedita? Animi fuga voluptates earum reprehenderit corporis in, ratione numquam obcaecati quas magnam.</p>
+    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quo dolore tenetur, placeat ad sit tempore mollitia, animi, excepturi quaerat necessitatibus. Consequuntur harum voluptas dolor quaerat! Totam recusandae corrupti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum veniam dignissimos ut assumenda id provident minus mollitia quam, deleniti dolor pariatur eum quaerat quidem. Illo quia vero saepe perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque velit, sed, quas dolorum nesciunt magni ducimus possimus voluptas voluptate dolore, ipsum facilis aut dolorem suscipit sit. Harum, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptatem minus aliquid. Ipsum eius dolor asperiores deserunt expedita? Animi fuga voluptates earum reprehenderit corporis in, ratione numquam obcaecati quas magnam.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quo dolore tenetur, placeat ad sit tempore mollitia, animi, excepturi quaerat necessitatibus. Consequuntur harum voluptas dolor quaerat! Totam recusandae corrupti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore harum veniam dignissimos ut assumenda id provident minus mollitia quam, deleniti dolor pariatur eum quaerat quidem. Illo quia vero saepe perferendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quaerat atque velit, sed, quas dolorum nesciunt magni ducimus possimus voluptas voluptate dolore, ipsum facilis aut dolorem suscipit sit. Harum, a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque voluptatem minus aliquid. Ipsum eius dolor asperiores deserunt expedita? Animi fuga voluptates earum reprehenderit corporis in, ratione numquam obcaecati quas magnam.</p>
+    
+    
+    
+    
     
 </body>
 </html>
